@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Guess the number</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <h1>Guess The Number</h1> 
+  <div class="container" id="containerbloc">
+     <h3>Guess a Random Number</h3>
+    <form>
+       <label for="number">First number of range:</label>
+       <input class="number" type="number" id="guessInput">
+    </form>
+    <form>
+       <label for="number">Last number of range:</label>
+       <input class="number" type="number" id="guessInput1">
+    </form>
+    <h3>Please guess a number , enter it and press guess</h3>
+    <form>
+       <label for="number">Enter a number:</label>
+       <input class="number" type="number" id="guessInput2">
+    </form>
+    <button onclick = "handleClick(this)">Guess</button>
+  </div>
+  <script>
+    let firstno = document.getElementById("guessInput");
+    let secondno = document.getElementById("guessInput1");
+      function handleClick(el){
+        let first = firstno.value;
+        let second= secondno.value;
+        console.log(first);
+        console.log(second);
+        let random =Math.floor(Math.random() * (second - first +1))
+          + first;
+        ;
+        let guess = document.getElementById("guessInput2").value;
+        console.log(guess);
+        if(random === guess){
+          alert("Yoo bro you got it Right!");
+        }
+        else {
+          alert("wrong guess");
+        }
+      }
+    
+    
+  </script>
+</body>
+
+</html>

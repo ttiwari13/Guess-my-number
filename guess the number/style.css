@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #f5d60f;
+    overflow: hidden;
+    color: #0008eb;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h1:hover {
+    color: #51b6e1;
+    text-decoration: underline;
+  }
+  
+  .container {
+   
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .container h3:hover {
+    color: #6dc7ee;
+    text-decoration: underline;
+  }
+  
+  .container .number {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: lightpink;
+  
+  }
+  
+  .container button {
+    padding: 10px;
+    border-radius: 20px;
+    color: #0008f0;
+  }
+  
+  /*.container button:hover{
+    display: block;
+    filter: drop-shadow(0 0 10px #0956f1);
+  }*/
+  .container button:hover {
+    filter: drop-shadow(0 0 10px #00ccff);
+    background-color: #f08fbe;
+  
+  }
